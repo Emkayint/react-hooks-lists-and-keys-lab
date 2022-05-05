@@ -13,6 +13,7 @@ test("each <span> element has a unique key prop", () => {
   let errorSpy = jest.spyOn(global.console, "error");
   render(
     <ProjectItem
+      keys = {project.id}
       name={project.name}
       about={project.about}
       technologies={project.technologies}
